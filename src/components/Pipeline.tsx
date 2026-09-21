@@ -61,8 +61,8 @@ const STAGES = [
 ];
 
 export function Pipeline() {
-  const [active, setActive] = useState(STAGES[0].id);
-  const stage = STAGES.find((s) => s.id === active) ?? STAGES[0];
+  const [active, setActive] = useState(STAGES[0]!.id);
+  const stage = STAGES.find((s) => s.id === active) ?? STAGES[0]!;
 
   return (
     <div className="space-y-6">
